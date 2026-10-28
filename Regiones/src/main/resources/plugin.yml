@@ -1,0 +1,18 @@
+name: Regiones
+version: '${project.version}'
+main: com.regiones.Regiones
+api-version: '1.21'
+description: Regiones protegidas con flags (solo ops)
+commands:
+  region:
+    description: Gestiona regiones protegidas
+    aliases: [rg]
+    usage: /region help
+    permission: regiones.admin
+permissions:
+  regiones.admin:
+    description: Usar los comandos de regiones
+    default: op
+  regiones.bypass:
+    description: Ignorar las flags de romper/poner/interactuar
+    default: op
